@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwfa7s4qjvjoq"]
+
+[ext_resource type="Script" path="res://sources/interface/SelectingRules.gd" id="1_dset0"]
+
+[node name="SelectingRules" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dset0")

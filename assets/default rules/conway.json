@@ -1,0 +1,16 @@
+{
+    "name": "conway life game",
+    "mode": "conway",
+    "version": "1.0",
+    "author": "Diamond",
+    "rules": [
+        {
+            "around": 2,
+            "state": "alive"
+        },
+        {
+            "around": 3,
+            "state": "alive"
+        }
+    ]
+}

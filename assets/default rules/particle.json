@@ -1,0 +1,34 @@
+{
+    "name": "particle life",
+    "mode": "particle",
+    "version": "1.0",
+    "author": "Diamond",
+    "rules": [
+        {
+            "color": "RED",
+            "encounter": {
+                "RED": {
+                    "force": 0,
+                    "range": 10
+                },
+                "GREEN": {
+                    "force": 0,
+                    "range": 10
+                }
+            }
+        },
+        {
+            "color": "GREEN",
+            "encounter": {
+                "RED": {
+                    "force": 0,
+                    "range": 10
+                },
+                "GREEN": {
+                    "force": 0,
+                    "range": 10
+                }
+            }
+        }
+    ]
+}

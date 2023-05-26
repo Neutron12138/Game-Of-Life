@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://y6h08bq05dcg"]
+
+[ext_resource type="Script" path="res://sources/interface/StartMenu.gd" id="1_qnp2y"]
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qnp2y")
+
+[node name="title" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1200.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 50
+text = "Game of Life"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_top = 100.0
+offset_right = 1200.0
+offset_bottom = 600.0
+
+[node name="start" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "开始游戏"
+
+[node name="rules" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "规则编辑"
+
+[node name="about" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "关于游戏"
+
+[node name="exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "退出游戏"
+
+[connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/rules" to="." method="_on_rules_pressed"]
+[connection signal="pressed" from="VBoxContainer/about" to="." method="_on_about_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
