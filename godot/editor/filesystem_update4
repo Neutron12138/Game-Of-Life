@@ -1,11 +1,1 @@
-res://sources/interface/StartMenu.tscn
-res://sources/interface/StartMenu.gd
-res://sources/interface/About.tscn
-res://sources/interface/About.gd
 res://sources/interface/SelectingGame.tscn
-res://sources/interface/SelectingGame.gd
-res://sources/interface/SelectingRules.tscn
-res://sources/interface/SelectingRules.gd
-res://sources/Global.gd
-res://sources/rules/Rules.gd
-res://sources/Constants.gd
